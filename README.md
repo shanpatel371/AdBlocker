@@ -1,22 +1,5 @@
 # AdBlocker
-A simple ad blocker project to experiment since a lot of ad blockers get taken down or don't work properly. 
-
-Sure! Here's a detailed README description that you can use for your project.
-
----
-
-# Website Blocker Rule Generator
-
-This Python script allows you to create a list of website blocking rules in JSON format. It appends new blocking rules to an existing `blocked_websites.json` file, making it ideal for managing and expanding a list of websites you want to block without overwriting or deleting previous entries.
-
-### Features
-- **Append to Existing Data**: It loads the existing blocking rules from `blocked_websites.json` (if the file exists) and appends new rules without overwriting the existing data.
-- **Automatic ID Generation**: Each new rule gets a unique ID based on the number of existing rules, ensuring no duplication.
-- **Simple User Input**: Users can input website URLs to block, and the script will automatically generate and append the corresponding blocking rules.
-- **Customizable Rule Format**: The rules are formatted as JSON objects with an `id`, `priority`, `action` (block), and a `condition` that matches the specified URL pattern.
-
-### Prerequisites
-- Python 3.x installed on your system.
+This is a simple ad blocker script designed for experimentation and personal use. Many ad blockers either get taken down or don't work as expected, so this script offers a flexible solution for blocking ads from specific websites. It allows you to add the domains of websites that frequently serve ads, and it automatically generates blocking rules for those sites. Once added, the script ensures that ads from those websites will be blocked and won't appear during your browsing sessions.
 
 ### How It Works
 1. **User Input**: The script prompts the user to input the website URLs they want to block (e.g., `doubleclick.net`, `googleadservices.com`, etc.).
@@ -29,16 +12,16 @@ This Python script allows you to create a list of website blocking rules in JSON
        "condition": {"urlFilter": "*://<website_url>/*"}
    }
    ```
-3. **Appending to File**: The script then appends the generated rule to the `blocked_websites.json` file. If the file doesn't exist, it is created.
+3. **Appending to File**: The script then appends the generated rule to the `rules.json` file. If the file doesn't exist, it is created.
 
 4. **Exit**: Type 'exit' to stop the process and save the changes.
 
 ### Installation
-1. Clone the repository or download the script file.
+1. Clone the repository 
 
 2. Install Python 3.x if you haven't already. You can download Python from [here](https://www.python.org/downloads/).
 
-3. Ensure you have permissions to read and write to the directory where the `blocked_websites.json` file will be saved.
+3. Ensure you have permissions to read and write to the directory where the `rules.json` file is saved.
 
 ### Usage
 1. Open a terminal or command prompt.
@@ -85,13 +68,7 @@ After running the script and adding a few websites, your `blocked_websites.json`
 ```
 
 ### Notes
-- If the `blocked_websites.json` file already exists, the new rules will be appended to it, preserving any previously saved rules.
-- If no file exists, the script will create a new `blocked_websites.json` file.
+- If the `rules.json` file already exists, the new rules will be appended to it, preserving any previously saved rules.
 - The script automatically assigns a unique ID to each new rule based on the number of existing rules.
-
-### License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 Feel free to adjust or expand any sections based on your specific needs or features!
