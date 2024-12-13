@@ -71,4 +71,10 @@ After running the script and adding a few websites, your `blocked_websites.json`
 - If the `rules.json` file already exists, the new rules will be appended to it, preserving any previously saved rules.
 - The script automatically assigns a unique ID to each new rule based on the number of existing rules.
 
+### Add to Chrome Extension
+- On Chrome, navigate to `chrome://extensions/`
+- Click `Load Unpacked`
+- Select the `AdBlocker` Folder 
+
+
 Feel free to adjust or expand any sections based on your specific needs or features!
