@@ -45,7 +45,7 @@ This is a simple ad blocker script designed for experimentation and personal use
    Enter website URL to block (or type 'exit' to stop): exit
    ```
 
-5. The `blocked_websites.json` file will be created or updated with the new blocking rules.
+5. The `rules.json` file will be created or updated with the new blocking rules.
 
 ### Example of `blocked_websites.json`
 After running the script and adding a few websites, your `blocked_websites.json` might look like this:
