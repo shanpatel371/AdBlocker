@@ -33,7 +33,7 @@ This is a simple ad blocker script designed for experimentation and personal use
 
 3. Run the script:
    ```bash
-   python generate_block_rules.py
+   python script.py
    ```
 
 4. Follow the on-screen prompts to enter website URLs that you want to block. When you're done, type `exit` to finish and save the data.
